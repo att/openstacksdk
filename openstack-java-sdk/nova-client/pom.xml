@@ -5,7 +5,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.woorea</groupId>
+    <groupId>com.att.woorea</groupId>
     <artifactId>openstack-java-sdk</artifactId>
     <version>3.3.24</version>
   </parent>
@@ -39,12 +39,12 @@
    
   <dependencies>
     <dependency>
-      <groupId>com.woorea</groupId>
+      <groupId>com.att.woorea</groupId>
       <artifactId>openstack-client</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.woorea</groupId>
+      <groupId>com.att.woorea</groupId>
       <artifactId>nova-model</artifactId>
       <version>${project.version}</version>
     </dependency>
