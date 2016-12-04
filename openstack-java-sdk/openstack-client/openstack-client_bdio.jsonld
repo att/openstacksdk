@@ -1,0 +1,54 @@
+[ {
+  "@id" : "uuid:e8f4740e-a53f-40bd-869b-dff0cb20ba0b",
+  "@type" : "BillOfMaterials",
+  "specVersion" : "1.1.0",
+  "spdx:name" : "OpenStack Client Black Duck I/O Export",
+  "creationInfo" : {
+    "spdx:creator" : "Tool: Launcher",
+    "spdx:created" : "2016-12-04T02:53:47.000Z"
+  }
+}, {
+  "@id" : "maven:com.woorea/openstack-client/3.3.24",
+  "@type" : "Project",
+  "name" : "OpenStack Client",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:openstack-client:3.3.24"
+  },
+  "relationship" : [ {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:org.slf4j/slf4j-api/1.7.5",
+  "@type" : "Component",
+  "revision" : "1.7.5",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.slf4j:slf4j-api:1.7.5"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+  "@type" : "Component",
+  "revision" : "1.9.13",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-mapper-asl:1.9.13"
+  },
+  "relationship" : {
+    "related" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.13",
+  "@type" : "Component",
+  "revision" : "1.9.13",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-core-asl:1.9.13"
+  }
+} ]

@@ -1,0 +1,282 @@
+[ {
+  "@id" : "uuid:700def68-f591-457d-a260-6e6c8edc9bd4",
+  "@type" : "BillOfMaterials",
+  "specVersion" : "1.1.0",
+  "spdx:name" : "OpenStack Java SDK Black Duck I/O Export",
+  "creationInfo" : {
+    "spdx:creator" : "Tool: Launcher",
+    "spdx:created" : "2016-11-30T18:40:32.000Z"
+  }
+}, {
+  "@id" : "maven:com.woorea/openstack-java-sdk/3.3.24",
+  "@type" : "Project",
+  "name" : "OpenStack Java SDK",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:openstack-java-sdk:3.3.24"
+  },
+  "relationship" : [ {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/nova-model/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/glance-model/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/cinder-model/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/keystone-model/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/quantum-model/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/heat-model/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:junit/junit/4.11",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.sun.jersey/jersey-client/1.17.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-jaxrs/1.9.12",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+  "@type" : "Component",
+  "revision" : "1.9.13",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-mapper-asl:1.9.13"
+  },
+  "relationship" : {
+    "related" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.13",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.13",
+  "@type" : "Component",
+  "revision" : "1.9.13",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-core-asl:1.9.13"
+  }
+}, {
+  "@id" : "maven:com.woorea/openstack-client/3.3.24",
+  "@type" : "Component",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:openstack-client:3.3.24"
+  },
+  "relationship" : {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.slf4j/slf4j-api/1.7.5",
+  "@type" : "Component",
+  "revision" : "1.7.5",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.slf4j:slf4j-api:1.7.5"
+  }
+}, {
+  "@id" : "maven:com.woorea/nova-model/3.3.24",
+  "@type" : "Component",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:nova-model:3.3.24"
+  }
+}, {
+  "@id" : "maven:com.woorea/glance-model/3.3.24",
+  "@type" : "Component",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:glance-model:3.3.24"
+  }
+}, {
+  "@id" : "maven:com.woorea/cinder-model/3.3.24",
+  "@type" : "Component",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:cinder-model:3.3.24"
+  }
+}, {
+  "@id" : "maven:com.woorea/keystone-model/3.3.24",
+  "@type" : "Component",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:keystone-model:3.3.24"
+  }
+}, {
+  "@id" : "maven:com.woorea/quantum-model/3.3.24",
+  "@type" : "Component",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:quantum-model:3.3.24"
+  }
+}, {
+  "@id" : "maven:com.woorea/heat-model/3.3.24",
+  "@type" : "Component",
+  "revision" : "3.3.24",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.woorea:heat-model:3.3.24"
+  }
+}, {
+  "@id" : "maven:junit/junit/4.11",
+  "@type" : "Component",
+  "revision" : "4.11",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "junit:junit:4.11"
+  },
+  "relationship" : {
+    "related" : "maven:org.hamcrest/hamcrest-core/1.3",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.hamcrest/hamcrest-core/1.3",
+  "@type" : "Component",
+  "revision" : "1.3",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.hamcrest:hamcrest-core:1.3"
+  }
+}, {
+  "@id" : "maven:com.sun.jersey/jersey-client/1.17.1",
+  "@type" : "Component",
+  "revision" : "1.17.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.sun.jersey:jersey-client:1.17.1"
+  },
+  "relationship" : {
+    "related" : "maven:com.sun.jersey/jersey-core/1.17.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:com.sun.jersey/jersey-core/1.17.1",
+  "@type" : "Component",
+  "revision" : "1.17.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.sun.jersey:jersey-core:1.17.1"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-jaxrs/1.9.12",
+  "@type" : "Component",
+  "revision" : "1.9.12",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-jaxrs:1.9.12"
+  },
+  "relationship" : {
+    "related" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.12",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.12",
+  "@type" : "Component",
+  "revision" : "1.9.12",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-core-asl:1.9.12"
+  }
+} ]

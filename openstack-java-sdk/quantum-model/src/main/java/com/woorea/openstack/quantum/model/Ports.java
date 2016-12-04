@@ -1,0 +1,44 @@
+/*******************************************************************************
+ * Copyright (C) 2016 AT&T Intellectual Property. All rights reserved. This code is licensed under the Apache License, Version 2.0
+ *******************************************************************************/
+
+package com.woorea.openstack.quantum.model;
+
+import java.io.Serializable;
+import java.util.Iterator;
+import java.util.List;
+
+import org.codehaus.jackson.annotate.JsonProperty;
+
+@SuppressWarnings("serial")
+public class Ports implements Iterable<Port>, Serializable {
+
+    @JsonProperty("ports")
+    private List<Port> list;
+
+    /**
+     * @return the list
+     */
+    public List<Port> getList() {
+        return list;
+    }
+
+    /**
+     * @param list
+     *            the list to set
+     */
+    public void setList(List<Port> list) {
+        this.list = list;
+    }
+
+    @Override
+    public Iterator<Port> iterator() {
+        return list.iterator();
+    }
+
+    @Override
+    public String toString() {
+        return "Ports [list=" + list + "]";
+    }
+
+}
