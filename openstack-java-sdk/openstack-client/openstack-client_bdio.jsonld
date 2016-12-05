@@ -1,20 +1,20 @@
 [ {
-  "@id" : "uuid:e8f4740e-a53f-40bd-869b-dff0cb20ba0b",
+  "@id" : "uuid:18e82304-a5f7-4a21-ae6b-d672e52bddf1",
   "@type" : "BillOfMaterials",
   "specVersion" : "1.1.0",
   "spdx:name" : "OpenStack Client Black Duck I/O Export",
   "creationInfo" : {
     "spdx:creator" : "Tool: Launcher",
-    "spdx:created" : "2016-12-04T02:53:47.000Z"
+    "spdx:created" : "2016-12-05T20:34:51.000Z"
   }
 }, {
-  "@id" : "maven:com.woorea/openstack-client/3.3.24",
+  "@id" : "maven:com.att.woorea/openstack-client/3.3.24",
   "@type" : "Project",
   "name" : "OpenStack Client",
   "revision" : "3.3.24",
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
-    "externalId" : "com.woorea:openstack-client:3.3.24"
+    "externalId" : "com.att.woorea:openstack-client:3.3.24"
   },
   "relationship" : [ {
     "related" : "maven:org.slf4j/slf4j-api/1.7.5",
