@@ -1,4 +1,4 @@
-h1. OpenStack Java SDK v3.3.24
+h1. OPENSTACK JAVA SDK v3.3.24
 
 h1. BUILD
 
