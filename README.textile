@@ -1,23 +1,18 @@
-h1. OpenStack Java SDK v2.0
+h1. OpenStack Java SDK v3.3.24
 
-h1. Important
+h1. BUILD
 
-You can continue using the latest source from v1.x essex branch
+Checkout code using:
+git checkout https://github.com/att/openstacksdk.git
+Build project using maven command “mvn clean install”.
 
 h2. Maven
 
 |groupId|artifactId|version|
-|com.woorea|keystone-client|3.0.0-SNAPSHOT|
-|com.woorea|nova-client|3.0.0-SNAPSHOT|
-|com.woorea|glance-client|3.0.0-SNAPSHOT|
-|com.woorea|swift-client|3.0.0-SNAPSHOT|
-
-h3. Maven Repositories
-
-https://maven.java.net/content/repositories/snapshots
-https://raw.github.com/woorea/maven/master/snapshots
-
-h1. Available artifacts
+|com.woorea|keystone-client|3.3.24|
+|com.woorea|nova-client|3.3.24|
+|com.woorea|glance-client|3.3.24|
+|com.woorea|swift-client|3.3.24|
 
 h2. OpenStack Identity Service
 
@@ -82,44 +77,6 @@ OpenStack Swift Model
 
 OpenStack Swift Client
 
-h2. OpenStack Ceilometer Service
-
-h3. MongoDB Installation
-
-OpenStack Ceilometer Service uses MongoDB as storage.
-
-h3. Ceilometer Compute Agent Installation
-
-OpenStack Ceilometer Compute Agent
-
-This artefact should be installed on each compute node
-
-<pre>
-mvn clean compile assembly:assembly
-Properties can be configured in /etc/ceilometer/ceilometer-agent.properties
-java -jar ceilometer-compute-agent-jar-with-dependencies.jar 
-</pre>
-
-h3. Ceilometer Collector Installation
-
-OpenStack Ceilometer Collector
-
-<pre>
-mvn clean compile assembly:assembly
-Properties can be configured in /etc/ceilometer/ceilometer-collector.properties
-java -jar ceilometer-collector.jar 
-</pre>
-
-h3. OpenStack Ceilometer API Installation
-
-OpenStack Ceilometer API
-
-<pre>
-mvn clean compile assembly:assembly
-Properties can be configured in /etc/ceilometer/ceilometer-api.properties
-java -jar ceilometer-api.jar 
-</pre>
-OpenStack Ceilometer Client
 
 h1. License
 
