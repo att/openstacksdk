@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Copyright (c) 2017 AT&T Intellectual Property. All rights reserved.
+ *******************************************************************************/
 package com.woorea.openstack.cinder.model;
 
 import java.io.Serializable;
