@@ -4,8 +4,8 @@
 
 package com.woorea.openstack.nova.model;
 
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 /**
  * This class is used as a model of a network to be created.

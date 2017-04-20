@@ -6,7 +6,7 @@ package com.woorea.openstack.quantum.model;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 public interface LoadBalancerAction extends Serializable {
 

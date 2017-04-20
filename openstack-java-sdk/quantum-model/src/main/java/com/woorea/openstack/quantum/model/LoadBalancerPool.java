@@ -7,9 +7,9 @@ package com.woorea.openstack.quantum.model;
 import java.io.Serializable;
 import java.util.List;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 /**
  * This represents a VIP (Virtual IP) for a load balancer. The VIP is the entry point into the load balancer.

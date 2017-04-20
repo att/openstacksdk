@@ -13,11 +13,11 @@ import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.hamcrest.CustomMatcher;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.woorea.openstack.quantum.model.Subnet.IpVersion;
 
 /**

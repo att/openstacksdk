@@ -4,7 +4,7 @@
 
 package com.woorea.openstack.heat.model;
 
-import org.codehaus.jackson.annotate.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Link {
     @JsonProperty("href")

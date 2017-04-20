@@ -13,9 +13,10 @@ import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class NetworkTest {
 

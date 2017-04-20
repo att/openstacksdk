@@ -5,15 +5,18 @@
 package com.woorea.openstack.nova.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.codehaus.jackson.annotate.JsonAnySetter;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 @JsonRootName("server")
 public class Server implements Serializable {
@@ -200,6 +203,8 @@ public class Server implements Serializable {
 	
 	private String hostId;
 	
+	private String hostStatus;
+	
 	private String updated;
 	
 	private String created;
@@ -240,7 +245,7 @@ public class Server implements Serializable {
     private String terminatedAt;
 
     @JsonProperty("os-extended-volumes:volumes_attached")
-    private List<String> osExtendedVolumesAttached;
+    private List<OsExtendedVolumesAttached> osExtendedVolumesAttached;
 	
 	private String uuid;
 	
@@ -428,6 +433,13 @@ public class Server implements Serializable {
 		return host;
 	}
 
+    /**
+     * @return the hostStatus
+     */
+    public String getHostStatus() {
+        return hostStatus;
+    }
+	
 	/**
 	 * @return the instanceName
 	 */
@@ -473,7 +485,7 @@ public class Server implements Serializable {
     /**
      * @return the osExtendedVolumesAttached
      */
-    public List<String> getOsExtendedVolumesAttached() {
+    public List<OsExtendedVolumesAttached> getOsExtendedVolumesAttached() {
         return osExtendedVolumesAttached;
     }
 

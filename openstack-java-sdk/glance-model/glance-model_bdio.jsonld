@@ -1,43 +1,54 @@
 [ {
-  "@id" : "uuid:86548747-701a-40f5-9967-c719a8db1112",
+  "@id" : "uuid:69ffc891-04bb-4483-92f1-f931bd3fc601",
   "@type" : "BillOfMaterials",
   "specVersion" : "1.1.0",
   "spdx:name" : "OpenStack Glance Model Black Duck I/O Export",
   "creationInfo" : {
     "spdx:creator" : "Tool: Launcher",
-    "spdx:created" : "2016-12-04T02:53:49.000Z"
+    "spdx:created" : "2017-04-20T19:58:39.000Z"
   }
 }, {
-  "@id" : "maven:com.woorea/glance-model/3.3.24",
+  "@id" : "maven:com.att.woorea/glance-model/3.3.27",
   "@type" : "Project",
   "name" : "OpenStack Glance Model",
-  "revision" : "3.3.24",
+  "revision" : "3.3.27",
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
-    "externalId" : "com.woorea:glance-model:3.3.24"
+    "externalId" : "com.att.woorea:glance-model:3.3.27"
   },
   "relationship" : {
-    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "related" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
     "relationshipType" : "DYNAMIC_LINK"
   }
 }, {
-  "@id" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
   "@type" : "Component",
-  "revision" : "1.9.13",
+  "revision" : "2.8.8",
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
-    "externalId" : "org.codehaus.jackson:jackson-mapper-asl:1.9.13"
+    "externalId" : "com.fasterxml.jackson.core:jackson-databind:2.8.8"
   },
-  "relationship" : {
-    "related" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.13",
+  "relationship" : [ {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.0",
     "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-core/2.8.8",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.0",
+  "@type" : "Component",
+  "revision" : "2.8.0",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.core:jackson-annotations:2.8.0"
   }
 }, {
-  "@id" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.13",
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-core/2.8.8",
   "@type" : "Component",
-  "revision" : "1.9.13",
+  "revision" : "2.8.8",
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
-    "externalId" : "org.codehaus.jackson:jackson-core-asl:1.9.13"
+    "externalId" : "com.fasterxml.jackson.core:jackson-core:2.8.8"
   }
 } ]

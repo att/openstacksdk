@@ -134,7 +134,12 @@ public class OpenStackClient {
             }
 
             try {
-                return connector.request(request);
+            	OpenStackResponse response = connector.request(request);
+            	int status = response.getStatus();
+            	if ( status >= 400) {
+            		throw new OpenStackResponseException("Unexpected status received from Openstack", status, response);
+            	}
+            	return response;
             } catch (OpenStackResponseException e) {
                 if (e.getStatus() != OpenStackResponseStatus.NOT_AUTHORIZED || tokenProvider == null) {
                     throw e;

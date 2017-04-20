@@ -6,7 +6,7 @@ package com.woorea.openstack.keystone.v3.model;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 @JsonRootName("role")
 public class Role implements Serializable {

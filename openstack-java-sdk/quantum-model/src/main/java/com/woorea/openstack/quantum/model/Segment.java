@@ -6,8 +6,8 @@ package com.woorea.openstack.quantum.model;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.annotate.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @SuppressWarnings("serial")
 @JsonIgnoreProperties(ignoreUnknown = true)

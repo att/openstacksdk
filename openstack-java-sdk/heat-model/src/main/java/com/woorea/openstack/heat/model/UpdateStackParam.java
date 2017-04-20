@@ -11,7 +11,7 @@ package com.woorea.openstack.heat.model;
  * <dd>Add ability to update a stack.</dd>
  * </dl>
  */
-import org.codehaus.jackson.annotate.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Map;
 

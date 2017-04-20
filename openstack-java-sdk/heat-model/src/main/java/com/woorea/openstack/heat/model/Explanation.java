@@ -4,8 +4,8 @@
 
 package com.woorea.openstack.heat.model;
 
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 /**
  * <h2>Revisions</h2>

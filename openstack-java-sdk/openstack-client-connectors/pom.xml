@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.att.woorea</groupId>
     <artifactId>openstack-java-sdk</artifactId>
-    <version>3.3.24</version>
+    <version>3.3.27</version>
   </parent>
   <artifactId>openstack-client-connectors</artifactId>
   <name>OpenStack Client Connectors</name>
@@ -41,6 +41,7 @@
       </activation>
       <modules>
         <module>jersey-connector</module>
+        <module>jersey2-connector</module>
       </modules>
     </profile>
   </profiles>
@@ -164,4 +165,8 @@
 		<developerConnection>${project.scm.connection}</developerConnection>
 		<url>http://github.com/att/openstacksdk/tree/master</url>
 </scm>
+   <modules>
+    <module>jersey-connector</module>
+   	<module>jersey2-connector</module>
+   </modules>
 </project>

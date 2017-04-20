@@ -6,9 +6,9 @@ package com.woorea.openstack.quantum.model;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 /**
  * This represents a Member of a pool for a load balancer.

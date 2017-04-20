@@ -26,15 +26,27 @@ public class HypervisorsResource {
         this.CLIENT = client;
     }
 
-    public List list() {
-        return new List();
-    }
 
     public class List extends OpenStackRequest<Hypervisors> {
 
-        public List() {
-            super(CLIENT, HttpMethod.GET, "/os-hypervisors", null, Hypervisors.class);
+        public List(boolean detail) {
+            super(CLIENT, HttpMethod.GET, detail ? "/os-hypervisors/detail" : "/os-hypervisors", null, Hypervisors.class);
         }
     }
+    
+    public class Show extends OpenStackRequest<Hypervisor> {
 
+        public Show(String id) {
+            super(CLIENT, HttpMethod.GET, new StringBuilder("/os-hypervisors/").append(id), null, Hypervisor.class);
+        }
+
+    }
+    
+    public List list(boolean detail) {
+        return new List(detail);
+    }
+    
+    public Show show(String id) {
+        return new Show(id);
+    }
 }

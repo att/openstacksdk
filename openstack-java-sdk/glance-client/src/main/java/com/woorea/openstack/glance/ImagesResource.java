@@ -11,10 +11,16 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.codehaus.jackson.JsonNode;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
+/*import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.SerializationConfig.Feature;
+import org.codehaus.jackson.map.SerializationConfig.Feature;*/
 
 import com.woorea.openstack.base.client.Entity;
 import com.woorea.openstack.base.client.HttpMethod;
@@ -156,11 +162,11 @@ public class ImagesResource {
         @Override
         public Image execute() throws OpenStackConnectException, OpenStackResponseException {
             OpenStackResponse response = CLIENT.request(this);
-            JsonNode node = response.getEntity(JsonNode.class);
+            JsonParser jsonParser = response.getEntity(JsonParser.class);
             ObjectMapper mapper = new ObjectMapper();
-            mapper.configure(Feature.WRAP_ROOT_VALUE, false);
+            mapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
             try {
-                return mapper.readValue(node, Image.class);
+                return mapper.readValue(jsonParser, Image.class);
             } catch (IOException e) {
                 e.printStackTrace();
                 throw new OpenStackResponseException(e.getMessage(), 500);

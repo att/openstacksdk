@@ -1,0 +1,353 @@
+[ {
+  "@id" : "uuid:f9297b0a-9026-4f3b-ae53-b4008eaa7607",
+  "@type" : "BillOfMaterials",
+  "specVersion" : "1.1.0",
+  "spdx:name" : "OpenStack Client Connectors Black Duck I/O Export",
+  "creationInfo" : {
+    "spdx:creator" : "Tool: Launcher",
+    "spdx:created" : "2017-04-20T19:59:01.000Z"
+  }
+}, {
+  "@id" : "maven:com.att.woorea/openstack-client-connectors/3.3.27",
+  "@type" : "Project",
+  "name" : "OpenStack Client Connectors",
+  "revision" : "3.3.27",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.att.woorea:openstack-client-connectors:3.3.27"
+  },
+  "relationship" : [ {
+    "related" : "maven:com.att.woorea/openstack-client/3.3.27",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.sun.jersey/jersey-client/1.17.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-jaxrs/1.9.12",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.att.woorea/openstack-client/3.3.27",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.jersey.core/jersey-client/2.25.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.att.woorea/openstack-client/3.3.27",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:com.att.woorea/openstack-client/3.3.27",
+  "@type" : "Component",
+  "revision" : "3.3.27",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.att.woorea:openstack-client:3.3.27"
+  },
+  "relationship" : {
+    "related" : "maven:org.slf4j/slf4j-api/1.7.5",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.slf4j/slf4j-api/1.7.5",
+  "@type" : "Component",
+  "revision" : "1.7.5",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.slf4j:slf4j-api:1.7.5"
+  }
+}, {
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
+  "@type" : "Component",
+  "revision" : "2.8.8",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.core:jackson-databind:2.8.8"
+  },
+  "relationship" : [ {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.0",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-core/2.8.8",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.0",
+  "@type" : "Component",
+  "revision" : "2.8.0",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.core:jackson-annotations:2.8.0"
+  }
+}, {
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-core/2.8.8",
+  "@type" : "Component",
+  "revision" : "2.8.8",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.core:jackson-core:2.8.8"
+  }
+}, {
+  "@id" : "maven:com.sun.jersey/jersey-client/1.17.1",
+  "@type" : "Component",
+  "revision" : "1.17.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.sun.jersey:jersey-client:1.17.1"
+  },
+  "relationship" : {
+    "related" : "maven:com.sun.jersey/jersey-core/1.17.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:com.sun.jersey/jersey-core/1.17.1",
+  "@type" : "Component",
+  "revision" : "1.17.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.sun.jersey:jersey-core:1.17.1"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-jaxrs/1.9.12",
+  "@type" : "Component",
+  "revision" : "1.9.12",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-jaxrs:1.9.12"
+  },
+  "relationship" : [ {
+    "related" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.12",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.12",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.12",
+  "@type" : "Component",
+  "revision" : "1.9.12",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-core-asl:1.9.12"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.12",
+  "@type" : "Component",
+  "revision" : "1.9.12",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-mapper-asl:1.9.12"
+  }
+}, {
+  "@id" : "maven:org.glassfish.jersey.core/jersey-client/2.25.1",
+  "@type" : "Component",
+  "revision" : "2.25.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.jersey.core:jersey-client:2.25.1"
+  },
+  "relationship" : [ {
+    "related" : "maven:javax.ws.rs/javax.ws.rs-api/2.0.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.jersey.core/jersey-common/2.25.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.hk2/hk2-api/2.5.0-b32",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.hk2.external/javax.inject/2.5.0-b32",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.hk2/hk2-locator/2.5.0-b32",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:javax.ws.rs/javax.ws.rs-api/2.0.1",
+  "@type" : "Component",
+  "revision" : "2.0.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "javax.ws.rs:javax.ws.rs-api:2.0.1"
+  }
+}, {
+  "@id" : "maven:org.glassfish.jersey.core/jersey-common/2.25.1",
+  "@type" : "Component",
+  "revision" : "2.25.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.jersey.core:jersey-common:2.25.1"
+  },
+  "relationship" : [ {
+    "related" : "maven:javax.annotation/javax.annotation-api/1.2",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.jersey.bundles.repackaged/jersey-guava/2.25.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.hk2/osgi-resource-locator/1.0.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:javax.annotation/javax.annotation-api/1.2",
+  "@type" : "Component",
+  "revision" : "1.2",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "javax.annotation:javax.annotation-api:1.2"
+  }
+}, {
+  "@id" : "maven:org.glassfish.jersey.bundles.repackaged/jersey-guava/2.25.1",
+  "@type" : "Component",
+  "revision" : "2.25.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.jersey.bundles.repackaged:jersey-guava:2.25.1"
+  }
+}, {
+  "@id" : "maven:org.glassfish.hk2/osgi-resource-locator/1.0.1",
+  "@type" : "Component",
+  "revision" : "1.0.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.hk2:osgi-resource-locator:1.0.1"
+  }
+}, {
+  "@id" : "maven:org.glassfish.hk2/hk2-api/2.5.0-b32",
+  "@type" : "Component",
+  "revision" : "2.5.0-b32",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.hk2:hk2-api:2.5.0-b32"
+  },
+  "relationship" : [ {
+    "related" : "maven:org.glassfish.hk2/hk2-utils/2.5.0-b32",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:org.glassfish.hk2.external/aopalliance-repackaged/2.5.0-b32",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:org.glassfish.hk2/hk2-utils/2.5.0-b32",
+  "@type" : "Component",
+  "revision" : "2.5.0-b32",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.hk2:hk2-utils:2.5.0-b32"
+  }
+}, {
+  "@id" : "maven:org.glassfish.hk2.external/aopalliance-repackaged/2.5.0-b32",
+  "@type" : "Component",
+  "revision" : "2.5.0-b32",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b32"
+  }
+}, {
+  "@id" : "maven:org.glassfish.hk2.external/javax.inject/2.5.0-b32",
+  "@type" : "Component",
+  "revision" : "2.5.0-b32",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.hk2.external:javax.inject:2.5.0-b32"
+  }
+}, {
+  "@id" : "maven:org.glassfish.hk2/hk2-locator/2.5.0-b32",
+  "@type" : "Component",
+  "revision" : "2.5.0-b32",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.hk2:hk2-locator:2.5.0-b32"
+  },
+  "relationship" : {
+    "related" : "maven:org.javassist/javassist/3.20.0-GA",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.javassist/javassist/3.20.0-GA",
+  "@type" : "Component",
+  "revision" : "3.20.0-GA",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.javassist:javassist:3.20.0-GA"
+  }
+}, {
+  "@id" : "maven:org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1",
+  "@type" : "Component",
+  "revision" : "2.25.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.jersey.media:jersey-media-json-jackson:2.25.1"
+  },
+  "relationship" : [ {
+    "related" : "maven:org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.4",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.4",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.4",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1",
+  "@type" : "Component",
+  "revision" : "2.25.1",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.glassfish.jersey.ext:jersey-entity-filtering:2.25.1"
+  }
+}, {
+  "@id" : "maven:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.4",
+  "@type" : "Component",
+  "revision" : "2.8.4",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.8.4"
+  }
+}, {
+  "@id" : "maven:com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.4",
+  "@type" : "Component",
+  "revision" : "2.8.4",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.4"
+  },
+  "relationship" : {
+    "related" : "maven:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.4",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.4",
+  "@type" : "Component",
+  "revision" : "2.8.4",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.4"
+  }
+}, {
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.4",
+  "@type" : "Component",
+  "revision" : "2.8.4",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.core:jackson-annotations:2.8.4"
+  }
+} ]

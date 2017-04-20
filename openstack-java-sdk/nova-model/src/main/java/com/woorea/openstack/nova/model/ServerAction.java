@@ -10,8 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 /**
  * <h2>Revisions</h2>
@@ -53,13 +53,13 @@ public interface ServerAction extends Serializable {
         /**
          * An optional new administrator password
          */
-        @JsonProperty("admin_password")
+        @JsonProperty("adminPass")
         private String adminPassword;
 
         /**
          * True if the instance being evacuated is located on shared storage
          */
-        @JsonProperty("on_shared_storage")
+        @JsonProperty("onSharedStorage")
         private boolean sharedStorage;
 
         /**

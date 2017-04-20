@@ -1,20 +1,20 @@
 [ {
-  "@id" : "uuid:752b3689-3770-43dd-9474-743e7d777264",
+  "@id" : "uuid:e46f6acb-7b37-4f96-9d9c-a39607c9988f",
   "@type" : "BillOfMaterials",
   "specVersion" : "1.1.0",
   "spdx:name" : "OpenStack Jersey Connector Black Duck I/O Export",
   "creationInfo" : {
     "spdx:creator" : "Tool: Launcher",
-    "spdx:created" : "2016-12-04T02:53:55.000Z"
+    "spdx:created" : "2017-04-20T19:59:02.000Z"
   }
 }, {
-  "@id" : "maven:com.woorea/jersey-connector/3.3.24",
+  "@id" : "maven:com.att.woorea/jersey-connector/3.3.27",
   "@type" : "Project",
   "name" : "OpenStack Jersey Connector",
-  "revision" : "3.3.24",
+  "revision" : "3.3.27",
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
-    "externalId" : "com.woorea:jersey-connector:3.3.24"
+    "externalId" : "com.att.woorea:jersey-connector:3.3.27"
   },
   "relationship" : [ {
     "related" : "maven:com.sun.jersey/jersey-client/1.17.1",
@@ -26,10 +26,10 @@
     "related" : "maven:org.slf4j/slf4j-api/1.7.5",
     "relationshipType" : "DYNAMIC_LINK"
   }, {
-    "related" : "maven:com.woorea/openstack-client/3.3.24",
+    "related" : "maven:com.att.woorea/openstack-client/3.3.27",
     "relationshipType" : "DYNAMIC_LINK"
   }, {
-    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+    "related" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
     "relationshipType" : "DYNAMIC_LINK"
   } ]
 }, {
@@ -60,10 +60,13 @@
     "externalSystemTypeId" : "maven",
     "externalId" : "org.codehaus.jackson:jackson-jaxrs:1.9.12"
   },
-  "relationship" : {
+  "relationship" : [ {
     "related" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.12",
     "relationshipType" : "DYNAMIC_LINK"
-  }
+  }, {
+    "related" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.12",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
 }, {
   "@id" : "maven:org.codehaus.jackson/jackson-core-asl/1.9.12",
   "@type" : "Component",
@@ -71,6 +74,14 @@
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
     "externalId" : "org.codehaus.jackson:jackson-core-asl:1.9.12"
+  }
+}, {
+  "@id" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.12",
+  "@type" : "Component",
+  "revision" : "1.9.12",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.codehaus.jackson:jackson-mapper-asl:1.9.12"
   }
 }, {
   "@id" : "maven:org.slf4j/slf4j-api/1.7.5",
@@ -81,19 +92,42 @@
     "externalId" : "org.slf4j:slf4j-api:1.7.5"
   }
 }, {
-  "@id" : "maven:com.woorea/openstack-client/3.3.24",
+  "@id" : "maven:com.att.woorea/openstack-client/3.3.27",
   "@type" : "Component",
-  "revision" : "3.3.24",
+  "revision" : "3.3.27",
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
-    "externalId" : "com.woorea:openstack-client:3.3.24"
+    "externalId" : "com.att.woorea:openstack-client:3.3.27"
   }
 }, {
-  "@id" : "maven:org.codehaus.jackson/jackson-mapper-asl/1.9.13",
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-databind/2.8.8",
   "@type" : "Component",
-  "revision" : "1.9.13",
+  "revision" : "2.8.8",
   "externalIdentifier" : {
     "externalSystemTypeId" : "maven",
-    "externalId" : "org.codehaus.jackson:jackson-mapper-asl:1.9.13"
+    "externalId" : "com.fasterxml.jackson.core:jackson-databind:2.8.8"
+  },
+  "relationship" : [ {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.0",
+    "relationshipType" : "DYNAMIC_LINK"
+  }, {
+    "related" : "maven:com.fasterxml.jackson.core/jackson-core/2.8.8",
+    "relationshipType" : "DYNAMIC_LINK"
+  } ]
+}, {
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-annotations/2.8.0",
+  "@type" : "Component",
+  "revision" : "2.8.0",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.core:jackson-annotations:2.8.0"
+  }
+}, {
+  "@id" : "maven:com.fasterxml.jackson.core/jackson-core/2.8.8",
+  "@type" : "Component",
+  "revision" : "2.8.8",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.fasterxml.jackson.core:jackson-core:2.8.8"
   }
 } ]

@@ -1,9 +1,13 @@
+/*******************************************************************************
+ * Copyright (C) 2016 AT&T Intellectual Property. All rights reserved. This code is licensed under the Apache License, Version 2.0
+ *******************************************************************************/
+
 package com.woorea.openstack.keystone.model;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.codehaus.jackson.map.annotate.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 @JsonRootName("tenant")
 @JsonIgnoreProperties(ignoreUnknown=true)
