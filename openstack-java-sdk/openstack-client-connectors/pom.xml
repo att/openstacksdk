@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.att.woorea</groupId>
     <artifactId>openstack-java-sdk</artifactId>
-    <version>3.3.27</version>
+    <version>3.3.27-oss</version>
   </parent>
   <artifactId>openstack-client-connectors</artifactId>
   <name>OpenStack Client Connectors</name>
