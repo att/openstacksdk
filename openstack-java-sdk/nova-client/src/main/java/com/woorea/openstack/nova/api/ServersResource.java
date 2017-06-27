@@ -653,7 +653,7 @@ public class ServersResource {
      */
     public EvacuateAction evacuate(String serverId, String host, String adminPassword, Boolean sharedStorage) {
         Evacuate entity = new Evacuate();
-        entity.setAdminPassword(host);
+        entity.setHost(host);
         if (adminPassword != null && adminPassword.length() > 0) {
             entity.setAdminPassword(adminPassword);
         }

@@ -48,6 +48,7 @@ import com.sun.jersey.client.urlconnection.HTTPSProperties;
 import com.sun.jersey.client.urlconnection.HttpURLConnectionFactory;
 import com.sun.jersey.client.urlconnection.URLConnectionClientHandler;
 import com.sun.jersey.core.header.OutBoundHeaders;
+import com.sun.jersey.core.impl.provider.entity.StringProvider;
 import com.woorea.openstack.base.client.OpenStackClient;
 import com.woorea.openstack.base.client.OpenStackClientConnector;
 import com.woorea.openstack.base.client.OpenStackConnectException;
@@ -265,6 +266,7 @@ public class JerseyConnector implements OpenStackClientConnector {
          */
         clientConfig.getClasses().add(JacksonJaxbJsonProvider.class);
         clientConfig.getClasses().add(OpenStackObjectMapper.class);
+        clientConfig.getClasses().add(StringProvider.class);
 
         /*
          * And create the client either with or without proxy

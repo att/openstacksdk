@@ -17,11 +17,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-/*import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.annotate.JsonProperty;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.SerializationConfig.Feature;*/
-
 import com.woorea.openstack.base.client.Entity;
 import com.woorea.openstack.base.client.HttpMethod;
 import com.woorea.openstack.base.client.OpenStackClient;
