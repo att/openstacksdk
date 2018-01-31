@@ -17,12 +17,14 @@ import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.ws.rs.ClientErrorException;
+import javax.ws.rs.ProcessingException;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.ClientRequestContext;
 import javax.ws.rs.client.ClientRequestFilter;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.Invocation;
+import javax.ws.rs.client.ResponseProcessingException;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.ext.ContextResolver;
@@ -49,6 +51,7 @@ import com.woorea.openstack.base.client.OpenStackResponse;
 import com.woorea.openstack.base.client.OpenStackResponseException;
 import com.woorea.openstack.common.client.Constants;
 import com.woorea.openstack.common.client.JULWrapper;
+import com.woorea.openstack.common.client.PasswordFilter;
 
 /**
  * <h2>Revisions</h2>
@@ -126,6 +129,10 @@ public class JaxRs20Connector implements OpenStackClientConnector {
             throw new OpenStackResponseException(e.getResponse().getStatusInfo().toString(), e.getResponse()
                 .getStatus());
         }
+        catch(ProcessingException e)
+        {
+        	throw new OpenStackConnectException(e.getMessage(), e);
+        }
     }
 
     /**
@@ -152,7 +159,7 @@ public class JaxRs20Connector implements OpenStackClientConnector {
         OpenStackClient osClient = request.getOpenStackClient();
         Properties properties = osClient.getProperties();
         logger = osClient.getLogger();
-        loggingFilter = new LoggingFilter(new JULWrapper(logger), true);
+        loggingFilter = new LoggingFilter(new PasswordFilter(logger), true);
 
         /*
          * Process the trusted hosts list if provided. In this case, we convert each entry in the comma-delimited list

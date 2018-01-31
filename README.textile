@@ -1,18 +1,18 @@
-h1. OPENSTACK JAVA SDK v3.3.24
+h1. OPENSTACK JAVA SDK v3.3.28
 
 h1. BUILD
 
 Checkout code using:
 git checkout https://github.com/att/openstacksdk.git
-Build project using maven command “mvn clean install”.
+Build project using maven command "mvn clean install".
 
 h2. Maven
 
 |groupId|artifactId|version|
-|com.woorea|keystone-client|3.3.24|
-|com.woorea|nova-client|3.3.24|
-|com.woorea|glance-client|3.3.24|
-|com.woorea|swift-client|3.3.24|
+|com.woorea|keystone-client|3.3.28|
+|com.woorea|nova-client|3.3.28|
+|com.woorea|glance-client|3.3.28|
+|com.woorea|swift-client|3.3.28|
 
 h2. OpenStack Identity Service
 

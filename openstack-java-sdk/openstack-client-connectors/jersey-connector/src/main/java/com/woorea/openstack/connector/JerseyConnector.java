@@ -57,6 +57,7 @@ import com.woorea.openstack.base.client.OpenStackResponse;
 import com.woorea.openstack.base.client.OpenStackResponseException;
 import com.woorea.openstack.common.client.Constants;
 import com.woorea.openstack.common.client.JULWrapper;
+import com.woorea.openstack.common.client.PasswordFilter;
 import com.sun.jersey.api.client.filter.LoggingFilter;
 
 /**
@@ -183,7 +184,7 @@ public class JerseyConnector implements OpenStackClientConnector {
         OpenStackClient osClient = request.getOpenStackClient();
         Properties properties = osClient.getProperties();
         logger = osClient.getLogger();
-        filter = new LoggingFilter(new JULWrapper(logger));
+        filter = new LoggingFilter(new PasswordFilter(logger));
         ClientConfig clientConfig = new DefaultClientConfig();
 
         /*
