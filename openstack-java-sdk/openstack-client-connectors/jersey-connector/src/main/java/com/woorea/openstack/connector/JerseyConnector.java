@@ -184,7 +184,11 @@ public class JerseyConnector implements OpenStackClientConnector {
         OpenStackClient osClient = request.getOpenStackClient();
         Properties properties = osClient.getProperties();
         logger = osClient.getLogger();
-        filter = new LoggingFilter(new PasswordFilter(logger));
+       
+        int maxLoggingFilterEntitySize= Integer.valueOf(System.getProperty("jersey.connector.maxLoggingFilterEntitySize","32000"));
+        
+        filter = new LoggingFilter(new PasswordFilter(logger), maxLoggingFilterEntitySize);
+
         ClientConfig clientConfig = new DefaultClientConfig();
 
         /*
