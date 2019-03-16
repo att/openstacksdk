@@ -159,7 +159,9 @@ public class JaxRs20Connector implements OpenStackClientConnector {
         OpenStackClient osClient = request.getOpenStackClient();
         Properties properties = osClient.getProperties();
         logger = osClient.getLogger();
-        loggingFilter = new LoggingFilter(new PasswordFilter(logger), true);
+        int maxLoggingFilterEntitySize= Integer.valueOf(System.getProperty("jersey.connector.maxLoggingFilterEntitySize","32000"));
+        
+        loggingFilter = new LoggingFilter(new PasswordFilter(logger), maxLoggingFilterEntitySize);
 
         /*
          * Process the trusted hosts list if provided. In this case, we convert each entry in the comma-delimited list
@@ -198,6 +200,15 @@ public class JaxRs20Connector implements OpenStackClientConnector {
         }
 
         ClientConfig config = new ClientConfig();
+        
+        int connectionTimeout= Integer.valueOf(System.getProperty("jersey.connector.connection.timeout","1000"));
+        int readTimeout= Integer.valueOf(System.getProperty("jersey.connector.connection.timeout","1000"));
+       
+        config.property(ClientProperties.CONNECT_TIMEOUT, connectionTimeout);
+        config.property(ClientProperties.READ_TIMEOUT,    readTimeout);
+        
+        
+        
         ClientBuilder builder = ClientBuilder.newBuilder();
         builder.withConfig(config);
 
