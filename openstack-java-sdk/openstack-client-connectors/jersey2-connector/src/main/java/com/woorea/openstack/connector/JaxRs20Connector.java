@@ -201,8 +201,8 @@ public class JaxRs20Connector implements OpenStackClientConnector {
 
         ClientConfig config = new ClientConfig();
         
-        int connectionTimeout= Integer.valueOf(System.getProperty("jersey.connector.connection.timeout","1000"));
-        int readTimeout= Integer.valueOf(System.getProperty("jersey.connector.connection.timeout","1000"));
+        int connectionTimeout= Integer.valueOf(System.getProperty("jersey.connector.connection.timeout","30000"));
+        int readTimeout= Integer.valueOf(System.getProperty("jersey.connector.read.timeout","120000"));
        
         config.property(ClientProperties.CONNECT_TIMEOUT, connectionTimeout);
         config.property(ClientProperties.READ_TIMEOUT,    readTimeout);
